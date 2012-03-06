@@ -1,0 +1,1689 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Docs For Class MailFormItem</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">com-irohacreative-form-mailForm</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+        
+                                                        
+                              		  [ <a href="../classtrees_com-irohacreative-form-mailForm.html" class="menu">class tree: com-irohacreative-form-mailForm</a> ]
+		  [ <a href="../elementindex_com-irohacreative-form-mailForm.html" class="menu">index: com-irohacreative-form-mailForm</a> ]
+		  	    [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+      <b>Packages:</b><br />
+              <a href="../li_default.html">default</a><br />
+              <a href="../li_com-irohacreative-form-mailForm.html">com-irohacreative-form-mailForm</a><br />
+            <br /><br />
+                        <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../com-irohacreative-form-mailForm/_libs---MailForm.php.html">		MailForm.php
+		</a><br>
+			<a href="../com-irohacreative-form-mailForm/_libs---MailFormError.php.html">		MailFormError.php
+		</a><br>
+			<a href="../com-irohacreative-form-mailForm/_libs---MailFormItem.php.html">		MailFormItem.php
+		</a><br>
+			<a href="../com-irohacreative-form-mailForm/_libs---MailFormResult.php.html">		MailFormResult.php
+		</a><br>
+			<a href="../com-irohacreative-form-mailForm/_libs---MailFormSetting.php.html">		MailFormSetting.php
+		</a><br>
+			<a href="../com-irohacreative-form-mailForm/_MySetting.php.html">		MySetting.php
+		</a><br>
+	  </div><br />
+      
+      
+            <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../com-irohacreative-form-mailForm/MailForm.html">MailForm</a><br />
+	    		<a href="../com-irohacreative-form-mailForm/MailFormError.html">MailFormError</a><br />
+	    		<a href="../com-irohacreative-form-mailForm/MailFormItem.html">MailFormItem</a><br />
+	    		<a href="../com-irohacreative-form-mailForm/MailFormResult.html">MailFormResult</a><br />
+	    		<a href="../com-irohacreative-form-mailForm/MailFormSetting.html">MailFormSetting</a><br />
+	    		<a href="../com-irohacreative-form-mailForm/MySetting.html">MySetting</a><br />
+	  </div>
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: MailFormItem</h1>
+Source Location: /libs/MailFormItem.php<br /><br />
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Class Overview</a></h3>
+<pre></pre><br />
+<div class="description">メールフォームの各要素を扱うクラス</div><br /><br />
+<h4>Author(s):</h4>
+<ul>
+          <li>Daisuke.Itani</li>
+            </ul>
+
+
+
+
+        
+    
+<h4>Version:</h4>
+<ul>
+  <li>1.0</li>
+</ul>
+
+        
+</td>
+
+<td valign="top">
+<h3><a href="#class_vars">Variables</a></h3>
+<ul>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#var$aftetTxt">$aftetTxt</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#var$attribute">$attribute</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#var$cols">$cols</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#var$default">$default</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#var$firstTxt">$firstTxt</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#var$inputsGlue">$inputsGlue</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#var$inputsTexts">$inputsTexts</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#var$items">$items</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#var$key">$key</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#var$label">$label</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#var$labelAddtionalTxt">$labelAddtionalTxt</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#var$mailFormSetting">$mailFormSetting</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#var$maxlength">$maxlength</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#var$noDisplayConfirm">$noDisplayConfirm</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#var$noDisplayEdit">$noDisplayEdit</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#var$noDisplayMail">$noDisplayMail</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#var$numberOfInput">$numberOfInput</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#var$optionFirst">$optionFirst</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#var$renderEditFnc">$renderEditFnc</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#var$rows">$rows</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#var$size">$size</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#var$tdAttribute">$tdAttribute</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#var$thAttribute">$thAttribute</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#var$trAttribute">$trAttribute</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#var$type">$type</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#var$validate">$validate</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#var$validateFnc">$validateFnc</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#var$value">$value</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#var$ValueToStringFnc">$ValueToStringFnc</a></li>
+  </ul>
+</td>
+
+<td valign="top">
+<h3><a href="#class_consts">Constants</a></h3>
+<ul>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#constERROR_ILLEGAL_CHAR">ERROR_ILLEGAL_CHAR</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#constERROR_INVALID_TYPE">ERROR_INVALID_TYPE</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#constERROR_LENGTH">ERROR_LENGTH</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#constERROR_REQUIRED">ERROR_REQUIRED</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#constERROR_REQUIRED_SELECT">ERROR_REQUIRED_SELECT</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#constERROR_TOO_LONG">ERROR_TOO_LONG</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#constERROR_TOO_SHORT">ERROR_TOO_SHORT</a></li>
+  </ul>
+</td>
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#methodgetConfirmHTML">getConfirmHTML</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#methodgetEditHTML">getEditHTML</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#methodgetEditHTMLTypeOf_checkbox">getEditHTMLTypeOf_checkbox</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#methodgetEditHTMLTypeOf_input">getEditHTMLTypeOf_input</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#methodgetEditHTMLTypeOf_inputs">getEditHTMLTypeOf_inputs</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#methodgetEditHTMLTypeOf_post">getEditHTMLTypeOf_post</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#methodgetEditHTMLTypeOf_radio">getEditHTMLTypeOf_radio</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#methodgetEditHTMLTypeOf_select">getEditHTMLTypeOf_select</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#methodgetEditHTMLTypeOf_tel">getEditHTMLTypeOf_tel</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#methodgetEditHTMLTypeOf_textarea">getEditHTMLTypeOf_textarea</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#methodgetEditHTMLTypeOf_todofuken">getEditHTMLTypeOf_todofuken</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#methodgetFormatedMailString">getFormatedMailString</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#methodgetRegexVar">getRegexVar</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#methodgetStringForMail">getStringForMail</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#methodgetTodofukenArray">getTodofukenArray</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#methodgetValueToStringTypeOf_checkbox">getValueToStringTypeOf_checkbox</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#methodgetValueToStringTypeOf_defult">getValueToStringTypeOf_defult</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#methodgetValueToStringTypeOf_inputs">getValueToStringTypeOf_inputs</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#methodgetValueToStringTypeOf_post">getValueToStringTypeOf_post</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#methodgetValueToStringTypeOf_select">getValueToStringTypeOf_select</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#methodgetValueToStringTypeOf_tel">getValueToStringTypeOf_tel</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#methodgetValueToStringTypeOf_textarea">getValueToStringTypeOf_textarea</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#methodgetValueToStringTypeOf_todofuken">getValueToStringTypeOf_todofuken</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#methodgetValueToStringWithArray">getValueToStringWithArray</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#methodhasError">hasError</a></li>
+    <li><a href="../com-irohacreative-form-mailForm/MailFormItem.html#methodsetDataWithArray">setDataWithArray</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+
+
+
+
+</tr></table>
+<hr />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line 12]<br />
+メールフォームの各要素を扱うクラス<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>Daisuke.Itani</td>
+  </tr>
+  <tr>
+    <td><b>version:</b>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+</table>
+</div>
+</div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+<hr />
+<a name="class_vars"></a>
+<h3>Class Variables</h3>
+<div class="tags">
+	<a name="var$aftetTxt"></a>
+	<p></p>
+	<h4>$aftetTxt = <span class="value"></span></h4>
+	<p>[line 30]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$attribute"></a>
+	<p></p>
+	<h4>$attribute = <span class="value"></span></h4>
+	<p>[line 29]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$cols"></a>
+	<p></p>
+	<h4>$cols = <span class="value"></span></h4>
+	<p>[line 45]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$default"></a>
+	<p></p>
+	<h4>$default = <span class="value"></span></h4>
+	<p>[line 41]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$firstTxt"></a>
+	<p></p>
+	<h4>$firstTxt = <span class="value"></span></h4>
+	<p>[line 31]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$inputsGlue"></a>
+	<p></p>
+	<h4>$inputsGlue = <span class="value"></span></h4>
+	<p>[line 50]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$inputsTexts"></a>
+	<p></p>
+	<h4>$inputsTexts = <span class="value"></span></h4>
+	<p>[line 49]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$items"></a>
+	<p></p>
+	<h4>$items = <span class="value"></span></h4>
+	<p>[line 40]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$key"></a>
+	<p></p>
+	<h4>$key = <span class="value"></span></h4>
+	<p>[line 17]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$label"></a>
+	<p></p>
+	<h4>$label = <span class="value"></span></h4>
+	<p>[line 19]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$labelAddtionalTxt"></a>
+	<p></p>
+	<h4>$labelAddtionalTxt = <span class="value"></span></h4>
+	<p>[line 20]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$mailFormSetting"></a>
+	<p></p>
+	<h4>$mailFormSetting = <span class="value"></span></h4>
+	<p>[line 64]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td><a href="../com-irohacreative-form-mailForm/MailFormSetting.html">MailFormSetting</a></td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$maxlength"></a>
+	<p></p>
+	<h4>$maxlength = <span class="value"></span></h4>
+	<p>[line 28]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$noDisplayConfirm"></a>
+	<p></p>
+	<h4>$noDisplayConfirm = <span class="value"></span></h4>
+	<p>[line 37]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$noDisplayEdit"></a>
+	<p></p>
+	<h4>$noDisplayEdit = <span class="value"></span></h4>
+	<p>[line 38]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$noDisplayMail"></a>
+	<p></p>
+	<h4>$noDisplayMail = <span class="value"></span></h4>
+	<p>[line 36]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$numberOfInput"></a>
+	<p></p>
+	<h4>$numberOfInput = <span class="value"></span></h4>
+	<p>[line 48]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$optionFirst"></a>
+	<p></p>
+	<h4>$optionFirst = <span class="value"></span></h4>
+	<p>[line 43]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$renderEditFnc"></a>
+	<p></p>
+	<h4>$renderEditFnc = <span class="value"></span></h4>
+	<p>[line 33]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$rows"></a>
+	<p></p>
+	<h4>$rows = <span class="value"></span></h4>
+	<p>[line 46]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$size"></a>
+	<p></p>
+	<h4>$size = <span class="value"></span></h4>
+	<p>[line 27]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$tdAttribute"></a>
+	<p></p>
+	<h4>$tdAttribute = <span class="value"></span></h4>
+	<p>[line 23]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$thAttribute"></a>
+	<p></p>
+	<h4>$thAttribute = <span class="value"></span></h4>
+	<p>[line 22]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$trAttribute"></a>
+	<p></p>
+	<h4>$trAttribute = <span class="value"></span></h4>
+	<p>[line 21]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$type"></a>
+	<p></p>
+	<h4>$type = <span class="value"></span></h4>
+	<p>[line 24]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$validate"></a>
+	<p></p>
+	<h4>$validate = <span class="value">array()</span></h4>
+	<p>[line 25]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$validateFnc"></a>
+	<p></p>
+	<h4>$validateFnc = <span class="value"></span></h4>
+	<p>[line 26]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$value"></a>
+	<p></p>
+	<h4>$value = <span class="value"></span></h4>
+	<p>[line 18]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$ValueToStringFnc"></a>
+	<p></p>
+	<h4>$ValueToStringFnc = <span class="value"></span></h4>
+	<p>[line 34]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+</div><br />
+
+<hr />
+<a name="class_methods"></a>
+<h3>Class Methods</h3>
+<div class="tags">
+
+  <hr />
+	<a name="methodgetConfirmHTML"></a>
+	<h3>method getConfirmHTML <span class="smalllinenumber">[line 115]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getConfirmHTML(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetEditHTML"></a>
+	<h3>method getEditHTML <span class="smalllinenumber">[line 85]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getEditHTML(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetEditHTMLTypeOf_checkbox"></a>
+	<h3>method getEditHTMLTypeOf_checkbox <span class="smalllinenumber">[line 352]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getEditHTMLTypeOf_checkbox(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetEditHTMLTypeOf_input"></a>
+	<h3>method getEditHTMLTypeOf_input <span class="smalllinenumber">[line 305]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getEditHTMLTypeOf_input(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetEditHTMLTypeOf_inputs"></a>
+	<h3>method getEditHTMLTypeOf_inputs <span class="smalllinenumber">[line 394]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getEditHTMLTypeOf_inputs(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetEditHTMLTypeOf_post"></a>
+	<h3>method getEditHTMLTypeOf_post <span class="smalllinenumber">[line 418]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getEditHTMLTypeOf_post(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetEditHTMLTypeOf_radio"></a>
+	<h3>method getEditHTMLTypeOf_radio <span class="smalllinenumber">[line 311]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getEditHTMLTypeOf_radio(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetEditHTMLTypeOf_select"></a>
+	<h3>method getEditHTMLTypeOf_select <span class="smalllinenumber">[line 329]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getEditHTMLTypeOf_select(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetEditHTMLTypeOf_tel"></a>
+	<h3>method getEditHTMLTypeOf_tel <span class="smalllinenumber">[line 412]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getEditHTMLTypeOf_tel(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetEditHTMLTypeOf_textarea"></a>
+	<h3>method getEditHTMLTypeOf_textarea <span class="smalllinenumber">[line 367]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getEditHTMLTypeOf_textarea(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetEditHTMLTypeOf_todofuken"></a>
+	<h3>method getEditHTMLTypeOf_todofuken <span class="smalllinenumber">[line 373]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getEditHTMLTypeOf_todofuken(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetFormatedMailString"></a>
+	<h3>method getFormatedMailString <span class="smalllinenumber">[line 170]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getFormatedMailString(
+string
+$value)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		メール本文の部分用文字列を整形して返す<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$value</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetRegexVar"></a>
+	<h3>method getRegexVar <span class="smalllinenumber">[line 542]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getRegexVar(
+
+$name)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>$name</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetStringForMail"></a>
+	<h3>method getStringForMail <span class="smalllinenumber">[line 145]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getStringForMail(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetTodofukenArray"></a>
+	<h3>method getTodofukenArray <span class="smalllinenumber">[line 490]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getTodofukenArray(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetValueToStringTypeOf_checkbox"></a>
+	<h3>method getValueToStringTypeOf_checkbox <span class="smalllinenumber">[line 450]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getValueToStringTypeOf_checkbox(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetValueToStringTypeOf_defult"></a>
+	<h3>method getValueToStringTypeOf_defult <span class="smalllinenumber">[line 424]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getValueToStringTypeOf_defult(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetValueToStringTypeOf_inputs"></a>
+	<h3>method getValueToStringTypeOf_inputs <span class="smalllinenumber">[line 461]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getValueToStringTypeOf_inputs(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetValueToStringTypeOf_post"></a>
+	<h3>method getValueToStringTypeOf_post <span class="smalllinenumber">[line 435]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getValueToStringTypeOf_post(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetValueToStringTypeOf_select"></a>
+	<h3>method getValueToStringTypeOf_select <span class="smalllinenumber">[line 446]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getValueToStringTypeOf_select(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetValueToStringTypeOf_tel"></a>
+	<h3>method getValueToStringTypeOf_tel <span class="smalllinenumber">[line 428]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getValueToStringTypeOf_tel(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetValueToStringTypeOf_textarea"></a>
+	<h3>method getValueToStringTypeOf_textarea <span class="smalllinenumber">[line 442]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getValueToStringTypeOf_textarea(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetValueToStringTypeOf_todofuken"></a>
+	<h3>method getValueToStringTypeOf_todofuken <span class="smalllinenumber">[line 474]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getValueToStringTypeOf_todofuken(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetValueToStringWithArray"></a>
+	<h3>method getValueToStringWithArray <span class="smalllinenumber">[line 478]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getValueToStringWithArray(
+
+$array)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>$array</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodhasError"></a>
+	<h3>method hasError <span class="smalllinenumber">[line 174]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void hasError(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetDataWithArray"></a>
+	<h3>method setDataWithArray <span class="smalllinenumber">[line 73]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setDataWithArray(
+array
+$mailFormScheme, string
+$key, value
+$value, <a href="../com-irohacreative-form-mailForm/MailFormSetting.html">MailFormSetting</a>
+$mailFormSetting)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$key</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$mailFormScheme</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">value&nbsp;&nbsp;</td>
+        <td><b>$value</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type"><a href="../com-irohacreative-form-mailForm/MailFormSetting.html">MailFormSetting</a>&nbsp;&nbsp;</td>
+        <td><b>$mailFormSetting</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+</div><br />
+
+<hr />
+<a name="class_consts"></a>
+<h3>Class Constants</h3>
+<div class="tags">
+	<a name="constERROR_ILLEGAL_CHAR"></a>
+	<p></p>
+	<h4>ERROR_ILLEGAL_CHAR = <span class="value">&nbsp;'IllegalChar'</span></h4>
+	<p>[line 55]</p>
+  
+  <br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="constERROR_INVALID_TYPE"></a>
+	<p></p>
+	<h4>ERROR_INVALID_TYPE = <span class="value">&nbsp;&quot;invalidType&quot;</span></h4>
+	<p>[line 54]</p>
+  
+  <br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="constERROR_LENGTH"></a>
+	<p></p>
+	<h4>ERROR_LENGTH = <span class="value">&nbsp;&quot;length&quot;</span></h4>
+	<p>[line 58]</p>
+  
+  <br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="constERROR_REQUIRED"></a>
+	<p></p>
+	<h4>ERROR_REQUIRED = <span class="value">&nbsp;&quot;required&quot;</span></h4>
+	<p>[line 52]</p>
+  
+  <br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="constERROR_REQUIRED_SELECT"></a>
+	<p></p>
+	<h4>ERROR_REQUIRED_SELECT = <span class="value">&nbsp;&quot;requiredSelect&quot;</span></h4>
+	<p>[line 53]</p>
+  
+  <br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="constERROR_TOO_LONG"></a>
+	<p></p>
+	<h4>ERROR_TOO_LONG = <span class="value">&nbsp;&quot;tooLong&quot;</span></h4>
+	<p>[line 56]</p>
+  
+  <br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="constERROR_TOO_SHORT"></a>
+	<p></p>
+	<h4>ERROR_TOO_SHORT = <span class="value">&nbsp;&quot;tooShort&quot;</span></h4>
+	<p>[line 57]</p>
+  
+  <br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+</div><br />
+
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Fri, 26 Aug 2011 16:40:47 +0900 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
