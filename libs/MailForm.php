@@ -272,7 +272,7 @@ class MailForm {
         foreach ($this->mailFormSetting->getFormScheme() as $key => $element) {
             $formItem = new $mailFormItemClassName;
             $formItem->setDataWithArray($element, $key, $this->getPost($key, TRUE), $this->mailFormSetting);
-            if (!isset($element['group']) || $element['group'] == '' || !is_null($element['group'])) {
+            if (!isset($element['group']) || $element['group'] == '' || is_null($element['group'])) {
                 $element['group'] = 0;
             }
             $this->result->setRenderResult($element['group'], $formItem->getConfirmHTML());
