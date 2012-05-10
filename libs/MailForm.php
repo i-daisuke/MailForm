@@ -170,8 +170,8 @@ class MailForm {
             }
             $formTxt = $this->mailFormSetting->getReturnMailFromText();
             
-            $subject = htmlspecialchars_decode($this->mailFormSetting->getReturnMailSubject());
-            $body = htmlspecialchars_decode($body);
+            $subject = html_entity_decode($this->mailFormSetting->getReturnMailSubject(),ENT_QUOTES|ENT_XHTML,'UTF-8');
+            $body = html_entity_decode($body,ENT_QUOTES|ENT_XHTML,'UTF-8');
             
             if (!mb_send_mail($this->getPost($this->mailFormSetting->getReturnMailName()), $subject, $body, "From: " . mb_encode_mimeheader("{$formTxt}") . " <{$fromAddress}>")) {
                 die("メールの送信に失敗しました。");
@@ -186,8 +186,8 @@ class MailForm {
      */
     protected function sendMailAdmin($body) {
         //管理者へ送信
-        $subject = htmlspecialchars_decode($this->mailFormSetting->getAdminMailSubject());
-        $body = htmlspecialchars_decode($body);
+        $subject = html_entity_decode($this->mailFormSetting->getAdminMailSubject(),ENT_QUOTES|ENT_XHTML,'UTF-8');
+        $body = html_entity_decode($body,ENT_QUOTES|ENT_XHTML,'UTF-8');
         if (!mb_send_mail($this->mailFormSetting->getAdminMail(), $subject, $body, "From: <" . $this->getPost($this->mailFormSetting->getReturnMailName()) . ">")) {
             die("メールの送信に失敗しました。");
         }
