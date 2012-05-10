@@ -143,6 +143,7 @@ class MailForm {
         if ($this->mailFormSetting->getThanksPageURL() !== FALSE) {
             $thanksPageURL = $this->mailFormSetting->getThanksPageURL();
             header("Location:{$thanksPageURL}");
+            exit();
         }
         else {
             die("完了ページのURLが指定されていません");
@@ -168,7 +169,11 @@ class MailForm {
                 $fromAddress = $this->mailFormSetting->getReturnMailFromAddress();
             }
             $formTxt = $this->mailFormSetting->getReturnMailFromText();
-            if (!mb_send_mail($this->getPost($this->mailFormSetting->getReturnMailName()), $this->mailFormSetting->getReturnMailSubject(), $body, "From: " . mb_encode_mimeheader("{$formTxt}") . " <{$fromAddress}>")) {
+            
+            $subject = htmlspecialchars_decode($this->mailFormSetting->getReturnMailSubject());
+            $body = htmlspecialchars_decode($body);
+            
+            if (!mb_send_mail($this->getPost($this->mailFormSetting->getReturnMailName()), $subject, $body, "From: " . mb_encode_mimeheader("{$formTxt}") . " <{$fromAddress}>")) {
                 die("メールの送信に失敗しました。");
             }
         }
@@ -181,7 +186,9 @@ class MailForm {
      */
     protected function sendMailAdmin($body) {
         //管理者へ送信
-        if (!mb_send_mail($this->mailFormSetting->getAdminMail(), $this->mailFormSetting->getAdminMailSubject(), $body, "From: <" . $this->getPost($this->mailFormSetting->getReturnMailName()) . ">")) {
+        $subject = htmlspecialchars_decode($this->mailFormSetting->getAdminMailSubject());
+        $body = htmlspecialchars_decode($body);
+        if (!mb_send_mail($this->mailFormSetting->getAdminMail(), $subject, $body, "From: <" . $this->getPost($this->mailFormSetting->getReturnMailName()) . ">")) {
             die("メールの送信に失敗しました。");
         }
     }
