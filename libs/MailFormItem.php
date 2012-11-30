@@ -27,7 +27,7 @@ class MailFormItem {
     public $size;
     public $maxlength;
     public $attribute;
-    public $aftetTxt;
+    public $afterTxt;
     public $firstTxt;
     public $group;
     //other type callback
@@ -391,12 +391,12 @@ class MailFormItem {
     protected function getEditHTMLTypeOf_input() {
         $size = ($this->size != '') ? ' size="' . $this->size . '" ' : '';
         $maxlength = ($this->maxlength != '') ? ' maxlength="' . $this->maxlength . '" ' : '';
-        return $this->firstTxt . '<input type="text" name="' . $this->key . '"  value="' . $this->value . '"' . $size . $maxlength . $this->attribute . ' />' . $this->aftetTxt;
+        return $this->firstTxt . '<input type="text" name="' . $this->key . '"  value="' . $this->value . '"' . $size . $maxlength . $this->attribute . ' />' . $this->afterTxt;
     }
 
     protected function getEditHTMLTypeOf_radio() {
         $i = 0;
-        $buff = '';
+        $buff = $this->firstTxt;
         foreach ($this->items as $value => $item) {
             $checked = '';
             $radioPost = $this->value;
@@ -406,10 +406,10 @@ class MailFormItem {
             elseif ($radioPost === FALSE && isset($this->default) && $this->default == $value) {
                 $checked = 'checked = "checked"';
             }
-            $buff .= $this->firstTxt . '<input type="radio" name="' . $this->key . '" id="form_' . $this->key . $i . '" value="' . $value . '" ' . $checked . ' ' . $this->attribute . ' /> <label for="form_' . $this->key . $i . '" >' . $item . '</label>　' . "\n" . $this->aftetTxt;
+            $buff .= '<input type="radio" name="' . $this->key . '" id="form_' . $this->key . $i . '" value="' . $value . '" ' . $checked . ' ' . $this->attribute . ' /> <label for="form_' . $this->key . $i . '" >' . $item . '</label> ' . "\n";
             $i++;
         }
-        return $buff;
+        return $buff .= $this->afterTxt;
     }
 
     protected function getEditHTMLTypeOf_select() {
@@ -431,7 +431,7 @@ class MailFormItem {
             $buff .= '' . "\n";
             $i++;
         }
-        $buff .= '</select>' . $this->aftetTxt;
+        $buff .= '</select>' . $this->afterTxt;
         return $buff;
     }
 
@@ -444,16 +444,16 @@ class MailFormItem {
             if ($checkBoxPostArray !== FALSE && in_array($value, $checkBoxPostArray)) {
                 $checked = 'checked = "checked"';
             }
-            $buff .= '<input type="checkbox" id="form_' . $this->key . $i . '" name="' . $this->key . '[' . $i . ']" value="' . $value . '" ' . $checked . ' ' . $this->attribute . ' /><label for="form_' . $this->key . $i . '" >' . $item . '</label><br />' . "\n";
+            $buff .= '<input type="checkbox" id="form_' . $this->key . $i . '" name="' . $this->key . '[' . $i . ']" value="' . $value . '" ' . $checked . ' ' . $this->attribute . ' /><label for="form_' . $this->key . $i . '" >' . $item . '</label>　' . "\n";
             $i++;
         }
-        return $buff .= $this->aftetTxt;
+        return $buff .= $this->afterTxt;
     }
 
     protected function getEditHTMLTypeOf_textarea() {
         $rows = ($this->rows != '') ? ' rows="' . $this->rows . '"' : '';
         $cols = ($this->cols != '') ? ' cols="' . $this->cols . '"' : '';
-        return $this->firstTxt . '<textarea name="' . $this->key . '"' . $rows . $cols . $this->attribute . ' >' . $this->value . '</textarea>' . $this->aftetTxt;
+        return $this->firstTxt . '<textarea name="' . $this->key . '"' . $rows . $cols . $this->attribute . ' >' . $this->value . '</textarea>' . $this->afterTxt;
     }
 
     protected function getEditHTMLTypeOf_todofuken() {
@@ -473,7 +473,7 @@ class MailFormItem {
             $buff .= '' . "\n";
             $i++;
         }
-        $buff .= '</select>' . $this->aftetTxt;
+        $buff .= '</select>' . $this->afterTxt;
         return $buff;
     }
 
@@ -492,19 +492,19 @@ class MailFormItem {
             $inputs[] = $inputText . '<input type="text" name="' . $this->key . '[' . $i . ']' . '"  value="' . $this->value[$i] . '"' . $size . $maxlength . $this->attribute . ' />';
         }
         $glue = (isset($this->inputsGlue)) ? $this->inputsGlue : '';
-        return $this->firstTxt . implode($glue, $inputs) . $this->aftetTxt;
+        return $this->firstTxt . implode($glue, $inputs) . $this->afterTxt;
     }
 
     protected function getEditHTMLTypeOf_tel() {
         $buff = $this->firstTxt;
         $buff .= '<input type="text" name="' . $this->key . '[0]" id="form_' . $this->key . '_1" value="' . $this->value[0] . '" size="10" maxlength="5" /> - <input type="text" name="' . $this->key . '[1]" name="form_' . $this->key . '_2" value="' . $this->value[1] . '" size="7" maxlength="4" /> - <input type="text" name="' . $this->key . '[2]" name="form_' . $this->key . '_3" value="' . $this->value[2] . '" size="7" maxlength="4" />';
-        return $buff .= $this->aftetTxt;
+        return $buff .= $this->afterTxt;
     }
 
     protected function getEditHTMLTypeOf_post() {
         $buff = $this->firstTxt;
         $buff .= '<input type="text" name="' . $this->key . '[0]" id="form_' . $this->key . '_1" value="' . $this->value[0] . '" size="5" maxlength="3" /> - <input type="text" name="' . $this->key . '[1]" name="form_' . $this->key . '_2" value="' . $this->value[1] . '" size="7" maxlength="4" />';
-        return $buff .= $this->aftetTxt;
+        return $buff .= $this->afterTxt;
     }
 
     protected function getValueToStringTypeOf_defult() {
